@@ -1,0 +1,72 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página com Grid */
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* Header, Main, Footer */
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #004466;
+  color: white;
+  padding: 1rem;
+}
+
+/* Navegação com Flexbox */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main com Grid para section + aside */
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* conteúdo principal + sidebar */
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* Section */
+section {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+/* Aside */
+aside {
+  background-color: #e6f2ff;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+/* Footer */
+footer {
+  background-color: #004466;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
