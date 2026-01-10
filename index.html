@@ -3,12 +3,77 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>WDD131 Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 131 – Dynamic Web Fundamentals – Jonas Oberdan</title>
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals. Jonas Oberdan. Página inicial com navegação, cards, imagens locais otimizadas e informações dinâmicas.">
+    <meta name="author" content="Jonas Oberdan">
+
+    <!-- Google Fonts (opcional) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/base.css">
+
+    <!-- JS -->
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
-    <h1>Welcome to WDD131</h1>
-    <p><a href="week01/basic-layout.html">Go to Week 01 Layout</a></p>
+    <!-- HEADER -->
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav aria-label="Primary">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/jonas-oberdan-fullstack-datascience/" target="_blank"
+                        rel="noopener">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank" rel="noopener">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7"
+                        target="_blank" rel="noopener">Scripture</a></li>
+                <li><a href="https://joberdan88.github.io/wdd131-dynamic-web-fundamentals/week01/basic-layout.html"
+                        aria-label="Final Project placeholder">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <h1>Jonas Oberdan</h1>
+
+        <section class="card">
+            <h2>About Me</h2>
+            <img src="images/profile.png" alt="Portrait of Jonas Oberdan" width="320" height="320">
+            <p>
+                I am a WDD131 student. This page is my starting point for the course, with useful links and basic
+                information.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Course Resources</h2>
+            <img src="images/byui-logo.png" alt="BYU-Idaho logo" width="240" height="240">
+            <ul>
+                <li><a href="https://byui-cse.github.io/wdd131-ww-course/" target="_blank" rel="noopener">Course
+                        Site</a></li>
+                <li><a href="https://developer.chrome.com/docs/lighthouse/overview/" target="_blank"
+                        rel="noopener">Lighthouse</a></li>
+                <li><a href="https://webaim.org/resources/contrastchecker/" target="_blank" rel="noopener">Contrast
+                        Checker</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> | Jonas Oberdan — Rio de Janeiro, Brazil
+        </p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>
