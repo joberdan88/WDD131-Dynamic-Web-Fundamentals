@@ -23,6 +23,13 @@ header h2 {
     /* Ensure good contrast */
 }
 
+/* Força todos os elementos do header a ficarem brancos */
+header span,
+#navMenu a,
+#menuButton {
+    color: white;
+}
+
 /* ===== Hamburger Button ===== */
 #menuButton {
     position: absolute;
@@ -31,7 +38,6 @@ header h2 {
     font-size: 2rem;
     background: none;
     border: none;
-    color: white;
     cursor: pointer;
 }
 
@@ -45,7 +51,6 @@ nav {
 }
 
 #navMenu a {
-    color: white;
     padding: 10px;
     text-decoration: none;
 }
